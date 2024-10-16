@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:hint="Register Here"
+        android:layout_marginTop="50dp"
+        android:textSize="40dp" />
+
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:ems="10"
+        android:inputType="text"
+        android:layout_below="@+id/reg"
+        android:hint="Username"/>
+
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:ems="10"
+        android:layout_below="@+id/et_username"
+        android:inputType="textPassword"
+        android:hint="Password"/>
+
+    <EditText
+        android:id="@+id/et_cpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:ems="10"
+        android:layout_below="@+id/et_password"
+        android:inputType="textPassword"
+        android:hint="Confirm Password"/>
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_cpassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:ems="10"
+        android:text="Register" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="130dp"
+        android:layout_marginStart="120dp"
+        android:ems="10"
+        android:text="Login" />
+
+
+</RelativeLayout>
